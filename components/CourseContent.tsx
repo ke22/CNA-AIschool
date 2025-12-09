@@ -50,25 +50,62 @@ export const CourseContent = () => {
                 <span className="text-xl text-white/50 line-through" aria-label="原價">NT$ 11,000</span>
               </div>
 
-              <div className="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-300/30 rounded-lg p-3 text-base text-white animate-pulse-slow" role="alert" aria-label="早鳥優惠">
-                🎉 12/20 前報名享早鳥價
+              <div className="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-300/30 rounded-lg p-3 text-base text-white animate-pulse-slow flex items-center gap-2" role="alert" aria-label="早鳥優惠">
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2 8.7 8.5 2 9.3l5 4.9-1.2 6.8L12 17.8l6.2 3.2L17 14.2l5-4.9-6.8-.8Z" />
+                </svg>
+                <span>12/20 前報名享早鳥價</span>
               </div>
 
               <div className="space-y-3 text-white/80 text-lg" role="list">
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">📅</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="4" y="5" width="16" height="14" rx="2" />
+                      <path d="M8 3v4M16 3v4M4 9h16" />
+                    </svg>
+                  </span>
                   <time itemProp="startDate" dateTime="2026-01-09T19:00:00+08:00">每週五 1/9、1/16、1/23、1/30</time>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">⏰</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3 2" />
+                    </svg>
+                  </span>
                   <span>19:00 - 21:15</span>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">📚</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 19.5c1-.67 2-1 3-1h11V5H7c-1 0-2 .33-3 1v13.5Z" />
+                      <path d="M4 6v13.5" />
+                      <path d="M7 6v13.5" />
+                    </svg>
+                  </span>
                   <span itemProp="timeRequired">4堂（共8小時）</span>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">👥</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M16 19a4 4 0 0 0-8 0" />
+                      <circle cx="12" cy="11" r="3" />
+                      <path d="M20 19a4 4 0 0 0-3-3.87" />
+                      <path d="M17 11a3 3 0 0 0-2.4-2.92" />
+                      <path d="M4 19a4 4 0 0 1 3-3.87" />
+                      <path d="M7 11a3 3 0 0 1 2.4-2.92" />
+                    </svg>
+                  </span>
                   <span>適合新手入門</span>
                 </div>
               </div>
@@ -141,19 +178,44 @@ export const CourseContent = () => {
 
               <div className="space-y-3 text-white/80 text-lg" role="list">
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">📅</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="4" y="5" width="16" height="14" rx="2" />
+                      <path d="M8 3v4M16 3v4M4 9h16" />
+                    </svg>
+                  </span>
                   <time itemProp="startDate" dateTime="2026-01-05T19:00:00+08:00">每週一 1/5、1/12、1/19、1/26</time>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">⏰</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3 2" />
+                    </svg>
+                  </span>
                   <span>19:00 - 21:15</span>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">📚</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 19.5c1-.67 2-1 3-1h11V5H7c-1 0-2 .33-3 1v13.5Z" />
+                      <path d="M4 6v13.5" />
+                      <path d="M7 6v13.5" />
+                    </svg>
+                  </span>
                   <span itemProp="timeRequired">4堂（共8小時）</span>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">👥</span>
+                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
+                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M16 19a4 4 0 0 0-8 0" />
+                      <circle cx="12" cy="11" r="3" />
+                      <path d="M20 19a4 4 0 0 0-3-3.87" />
+                      <path d="M17 11a3 3 0 0 0-2.4-2.92" />
+                      <path d="M4 19a4 4 0 0 1 3-3.87" />
+                      <path d="M7 11a3 3 0 0 1 2.4-2.92" />
+                    </svg>
+                  </span>
                   <span>已有基礎概念</span>
                 </div>
               </div>
