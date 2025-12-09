@@ -35,3 +35,4 @@ export const ANIMATION_CLASSES = {
     `transition-all duration-700 ${delay} ${visible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`,
 } as const;
 
+
