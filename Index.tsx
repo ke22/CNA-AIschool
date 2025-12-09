@@ -66,8 +66,21 @@ const Index = () => {
               {/* Contact Info */}
               <section className="w-full" aria-labelledby="contact-title">
                 <div className="bg-white/5 backdrop-blur-md border border-cyan-300/20 rounded-2xl p-6 sm:p-8 shadow-lg">
-                  <h3 id="contact-title" className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    📞 聯絡資訊
+                  <h3 id="contact-title" className="text-3xl sm:text-4xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span aria-hidden="true" className="text-white">
+                      <svg
+                        className="w-7 h-7 sm:w-8 sm:h-8"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.75"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M6.5 3h3l1 5-2 1a11 11 0 0 0 6 6l1-2 5 1v3a2 2 0 0 1-2.2 2A15 15 0 0 1 4 6.2 2 2 0 0 1 6.5 3Z" />
+                      </svg>
+                    </span>
+                    聯絡資訊
                   </h3>
                   <div className="space-y-3 text-white/80 text-lg">
                     <p>洽詢電話：02-2505-1180 分機789(吳先生) 、分機785(黃小姐)</p>

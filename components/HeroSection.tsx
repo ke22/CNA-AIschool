@@ -20,7 +20,19 @@ export const HeroSection = () => {
           role="status" 
           aria-live="polite"
         >
-          <span className="text-white icon-bounce" aria-hidden="true">⚡</span>
+          <span className="text-white icon-bounce" aria-hidden="true">
+            <svg
+              className="w-5 h-5 sm:w-6 sm:h-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M13 3 5 14h6l-1 7 9-11h-6l1-7Z" />
+            </svg>
+          </span>
           <span className="text-white text-sm sm:text-lg md:text-xl font-medium whitespace-nowrap">2026 年度課程正式開放報名</span>
         </div>
 
@@ -58,11 +70,37 @@ export const HeroSection = () => {
           role="list"
         >
           <div className="flex items-center justify-center gap-3 text-white text-base sm:text-lg md:text-xl" role="listitem">
-            <span className="text-2xl sm:text-3xl icon-bounce" aria-hidden="true">📅</span>
+            <span className="text-2xl sm:text-3xl icon-bounce" aria-hidden="true">
+              <svg
+                className="w-6 h-6 sm:w-7 sm:h-7"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="4" y="5" width="16" height="14" rx="2" />
+                <path d="M8 3v4M16 3v4M4 9h16" />
+              </svg>
+            </span>
             <time dateTime="2026-01-05/2026-01-30">2026.01.05 - 01.30</time>
           </div>
           <div className="flex items-center justify-center gap-3 text-white text-base sm:text-lg md:text-xl" role="listitem">
-            <span className="text-2xl sm:text-3xl icon-bounce" aria-hidden="true">📍</span>
+            <span className="text-2xl sm:text-3xl icon-bounce" aria-hidden="true">
+              <svg
+                className="w-6 h-6 sm:w-7 sm:h-7"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 21s-6-5.3-6-10a6 6 0 1 1 12 0c0 4.7-6 10-6 10Z" />
+                <circle cx="12" cy="11" r="2.5" />
+              </svg>
+            </span>
             <address className="not-italic">台北市松江路209號8樓</address>
           </div>
         </div>
