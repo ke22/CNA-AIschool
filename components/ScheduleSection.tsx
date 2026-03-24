@@ -11,7 +11,7 @@ export const ScheduleSection = () => {
       <div className="text-center space-y-8">
         <div>
           <h2 className="text-4xl font-bold text-white mb-4">課程時間表</h2>
-          <p className="text-white/80 text-lg">2026 年 1 月課程表</p>
+    
           <p className="text-white/70 text-sm">每堂課上課時間 19:00 - 21:15｜實體課程</p>
         </div>
 

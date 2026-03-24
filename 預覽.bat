@@ -7,6 +7,7 @@ echo.
 REM 檢查是否已構建
 if not exist "dist\index.html" (
     echo 正在構建網站...
+    if not defined VITE_SITE_ORIGIN set VITE_SITE_ORIGIN=http://127.0.0.1:4173
     call npm run build
     
     if errorlevel 1 (

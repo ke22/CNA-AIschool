@@ -9,6 +9,8 @@ echo "=========================================="
 # 步驟 1：構建生產版本
 echo ""
 echo "📦 步驟 1：構建生產版本..."
+# 連結預覽需絕對網址；未設定時使用本機打包預設（與 start-server 埠一致）
+export VITE_SITE_ORIGIN="${VITE_SITE_ORIGIN:-http://127.0.0.1:8000}"
 npm run build
 
 if [ $? -ne 0 ]; then

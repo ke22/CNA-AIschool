@@ -33,7 +33,7 @@ export const HeroSection = () => {
               <path d="M13 3 5 14h6l-1 7 9-11h-6l1-7Z" />
             </svg>
           </span>
-          <span className="text-white text-sm sm:text-lg md:text-xl font-medium whitespace-nowrap">2026 年度課程正式開放報名</span>
+          <span className="text-white text-sm sm:text-lg md:text-xl font-medium whitespace-nowrap">2026 年度課程開放報名</span>
         </div>
 
         {/* Main Title */}
@@ -42,25 +42,25 @@ export const HeroSection = () => {
           ref={titleRef}
           className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight ${ANIMATION_CLASSES.fadeInUp(titleVisible, 'delay-100')}`}
         >
-          AI 時代生存術！大師開課囉！
+          AI 操作捷徑
         </h1>
 
-        {/* Subtitle - Hidden */}
+        {/* Subtitle */}
         <p 
           ref={subtitleRef}
-          className={`hidden text-2xl sm:text-3xl md:text-4xl font-bold ${ANIMATION_CLASSES.fadeInUp(subtitleVisible, 'delay-200')}`}
+          className={`text-4xl sm:text-5xl md:text-6xl font-extrabold text-white ${ANIMATION_CLASSES.fadeInUp(subtitleVisible, 'delay-200')}`}
         >
-          <span className="text-white">中央社</span>{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400">AI 賦能學院</span>
+          春季班開課
         </p>
 
         {/* Description */}
         <div 
           ref={descRef}
-          className={`text-white space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl px-4 ${ANIMATION_CLASSES.fadeInUp(descVisible, 'delay-300')}`}
+          className={`text-white space-y-3 max-w-2xl mx-auto text-base sm:text-lg md:text-xl px-4 ${ANIMATION_CLASSES.fadeInUp(descVisible, 'delay-300')}`}
         >
-          <p className="text-balance">從入門到進階，一次打造你的 AI 專業競爭力。</p>
-          <p className="text-balance">掌握 AI 工具應用與搜尋生態策略，迎向職涯新高峰。</p>
+          <p className="text-balance">
+          兩期系統化實戰，從核心產出到智慧自動化，全方位建構你的 AI 競爭力。掌握精準指令與數據決策策略，助您翻轉工作流，登頂職涯新高峰。
+          </p>
         </div>
 
         {/* Info Blocks */}
@@ -84,7 +84,7 @@ export const HeroSection = () => {
                 <path d="M8 3v4M16 3v4M4 9h16" />
               </svg>
             </span>
-            <time dateTime="2026-01-05/2026-01-30">2026.01.05 - 01.30</time>
+            <time dateTime="2026-04-22/2026-06-10">2026.04.22 - 06.10</time>
           </div>
           <div className="flex items-center justify-center gap-3 text-white text-base sm:text-lg md:text-xl" role="listitem">
             <span className="text-2xl sm:text-3xl icon-bounce" aria-hidden="true">
@@ -114,7 +114,7 @@ export const HeroSection = () => {
             href={URLS.ACCUPASS}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-animated btn-pulse bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition font-medium shadow-lg hover:shadow-cyan-500/50 text-base sm:text-lg md:text-xl text-center min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+            className="btn-animated btn-pulse bg-gradient-to-r from-[#FE5D13] to-[#FE5D13] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:from-[#ff7a33] hover:to-[#ff7a33] transition font-medium shadow-lg hover:shadow-[#FE5D13]/50 text-base sm:text-lg md:text-xl text-center min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#FE5D13] focus:ring-offset-2 focus:ring-offset-slate-900"
             aria-label="立即報名課程，將在新視窗開啟 ACCUPASS 報名頁面"
           >
             立即報名課程

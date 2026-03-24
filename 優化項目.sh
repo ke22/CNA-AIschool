@@ -60,6 +60,7 @@ echo "  ✅ 已清理臨時文件"
 # 6. 重新構建以應用優化
 echo ""
 echo "📦 步驟 6：重新構建..."
+export VITE_SITE_ORIGIN="${VITE_SITE_ORIGIN:-http://127.0.0.1:8000}"
 npm run build
 cp -r img dist/ 2>/dev/null
 

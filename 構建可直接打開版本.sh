@@ -9,6 +9,7 @@ echo ""
 
 # 構建
 echo "📦 正在構建（IIFE 格式）..."
+export VITE_SITE_ORIGIN="${VITE_SITE_ORIGIN:-http://127.0.0.1:8000}"
 npm run build
 
 if [ $? -ne 0 ]; then

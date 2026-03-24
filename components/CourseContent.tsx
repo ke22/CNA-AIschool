@@ -3,10 +3,26 @@ import { URLS } from '../constants/urls';
 import { ANIMATION_CLASSES } from '../utils/classNames';
 
 const SCHEDULE = [
-  { week: '第一週', advanced: { date: '1/5 (一)', title: '搜尋新生態戰略轉移' }, basic: { date: '1/9 (五)', title: 'AI 時代生存術' } },
-  { week: '第二週', advanced: { date: '1/12 (一)', title: '內容重塑與 E-E-A-T' }, basic: { date: '1/16 (五)', title: '文件與資料效率革命' } },
-  { week: '第三週', advanced: { date: '1/19 (一)', title: '技術佈局與轉換策略' }, basic: { date: '1/23 (五)', title: '行銷與說服力強化' } },
-  { week: '第四週', advanced: { date: '1/26 (一)', title: '私域與長期內容護城河' }, basic: { date: '1/30 (五)', title: 'AI 簡報影音製作' } },
+  {
+    week: '第一週',
+    basic: { date: '4/22 (三)', title: 'AI 時代新思維：ChatGPT 與 LLM 基礎' },
+    advanced: { date: '5/20 (三)', title: 'AI 數據大師：AI 與試算表的協作' },
+  },
+  {
+    week: '第二週',
+    basic: { date: '4/29 (三)', title: 'AI 效率大師：文件處理與會議記錄' },
+    advanced: { date: '5/27 (三)', title: 'AI 外掛大師：瀏覽器 AI 自動化實戰' },
+  },
+  {
+    week: '第三週',
+    basic: { date: '5/6 (三)', title: 'AI 簡報大師：高品質會議簡報快速製作' },
+    advanced: { date: '6/3 (三)', title: 'AI 搜尋大師：高效情報獲取與事實查核' },
+  },
+  {
+    week: '第四週',
+    basic: { date: '5/13 (三)', title: 'AI 設計大師：無版權費要求的高品質設計' },
+    advanced: { date: '6/10 (三)', title: 'AI 客製大師：打造個人專屬的 AI 助理' },
+  },
 ] as const;
 
 export const CourseContent = () => {
@@ -16,12 +32,13 @@ export const CourseContent = () => {
   const [scheduleRef, scheduleVisible] = useScrollAnimation();
 
   return (
-    <section id="content" className="w-full py-12" aria-labelledby="course-content-title">
+    <section id="content" className="w-full py-12 scroll-mt-24" aria-labelledby="course-content-title">
       <div className="text-center space-y-12">
         <div ref={titleRef} className={ANIMATION_CLASSES.fadeInUp(titleVisible)}>
-          <h2 id="course-content-title" className="text-5xl font-bold text-white mb-4">課程內容</h2>
-          <p className="text-white/80 text-xl">兩大系列課程</p>
-          <p className="text-white/70 text-lg">無論你是新手或專業工作者，都能在短時間內建立 AI 時代的核心競爭力</p>
+          <h2 id="course-content-title" className="text-5xl font-bold text-white mb-4">
+            課程內容
+          </h2>
+          
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto items-stretch">
@@ -35,38 +52,25 @@ export const CourseContent = () => {
           >
             <div className="text-left space-y-6 flex-grow">
               <div>
-                <span className="inline-block bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-base font-medium mb-3 icon-bounce" aria-label="入門班標籤">
+                <h3
+                  id="basic-course-title"
+                  className="text-3xl font-bold text-white mb-1"
+                  itemProp="name"
+                >
                   入門班
-                </span>
-                <h3 id="basic-course-title" className="text-3xl font-bold text-white mb-2" itemProp="name">上班族賦能課程</h3>
-                <p className="text-white/80 text-lg" itemProp="description">職場效率全面升級</p>
+                </h3>
                 <meta itemProp="courseCode" content="BASIC-2026" />
                 <meta itemProp="educationalLevel" content="入門" />
               </div>
 
-              <div className="flex items-baseline gap-3" aria-label="課程價格" itemScope itemType="https://schema.org/Offer">
-                <span className="text-4xl font-bold text-white" itemProp="price">NT$ 9,500</span>
+              <div className="flex items-baseline gap-3 mt-2" aria-label="課程價格" itemScope itemType="https://schema.org/Offer">
+                <span className="text-4xl font-bold text-white" itemProp="price">
+                  NT$ 8,000
+                </span>
                 <meta itemProp="priceCurrency" content="TWD" />
-                <span className="text-xl text-white/50 line-through" aria-label="原價">NT$ 11,000</span>
               </div>
 
-              <div className="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-300/30 rounded-lg p-3 text-base text-white animate-pulse-slow flex items-center gap-2" role="alert" aria-label="早鳥優惠">
-                <svg
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M12 2 8.7 8.5 2 9.3l5 4.9-1.2 6.8L12 17.8l6.2 3.2L17 14.2l5-4.9-6.8-.8Z" />
-                </svg>
-                <span>12/20 前報名享早鳥價</span>
-              </div>
-
-              <div className="space-y-3 text-white/80 text-lg" role="list">
+              <div className="space-y-3 text-white/80 text-lg mt-4" role="list">
                 <div className="flex items-center gap-2" role="listitem">
                   <span className="w-6 text-center icon-bounce" aria-hidden="true">
                     <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -74,7 +78,7 @@ export const CourseContent = () => {
                       <path d="M8 3v4M16 3v4M4 9h16" />
                     </svg>
                   </span>
-                  <time itemProp="startDate" dateTime="2026-01-09T19:00:00+08:00">每週五 1/9、1/16、1/23、1/30</time>
+                  <time itemProp="startDate" dateTime="2026-04-22T19:00:00+08:00">每週三 4/22、4/29、5/6、5/13</time>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
                   <span className="w-6 text-center icon-bounce" aria-hidden="true">
@@ -95,39 +99,37 @@ export const CourseContent = () => {
                   </span>
                   <span itemProp="timeRequired">4堂（共8小時）</span>
                 </div>
-                <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
-                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M16 19a4 4 0 0 0-8 0" />
-                      <circle cx="12" cy="11" r="3" />
-                      <path d="M20 19a4 4 0 0 0-3-3.87" />
-                      <path d="M17 11a3 3 0 0 0-2.4-2.92" />
-                      <path d="M4 19a4 4 0 0 1 3-3.87" />
-                      <path d="M7 11a3 3 0 0 1 2.4-2.92" />
-                    </svg>
-                  </span>
-                  <span>適合新手入門</span>
-                </div>
               </div>
 
-              <div className="pt-4 border-t border-cyan-300/20">
-                <h4 className="text-white font-semibold mb-3 text-xl">適合對象</h4>
-                <p className="text-white/70 text-base" itemProp="audience">上班族、行政人員、人資、企劃、行銷、業務、主管、AI 初學者</p>
-              </div>
+              <div className="pt-4 border-t border-cyan-300/20 mt-4 text-left">
+                <h4 className="text-white font-semibold mb-2 text-xl">適合對象</h4>
+                <p className="text-white/70 text-base">
+                  上班族、行政庶務、人資財務、行銷企劃、公關 PM、媒體編輯、企業主管、自媒體經營者、專案決策者
+                </p>
 
-              <div className="pt-4 border-t border-cyan-300/20">
-                <h4 className="text-white font-semibold mb-3 text-xl">課程內容</h4>
-                <ul className="space-y-2 text-white/70 text-base" role="list" itemProp="teaches">
-                  <li>• AI 時代生存術：AI 基礎觀念、AI 工具 (Gemini 3 Pro、Veo3、Nano Banana Pro...)、資安原則、AI 搜尋與手機應用</li>
-                  <li>• 文件與資料效率革命：長文摘要、合約快篩、會議紀錄與數據整理</li>
-                  <li>• 行銷與說服力強化：文案生成、社群語氣切換、談判模擬</li>
-                  <li>• AI 簡報影音製作：簡報自動生成、圖片處理、虛擬主播</li>
+                <h4 className="text-white font-semibold mb-2 text-xl mt-4">課程內容</h4>
+                <ul className="space-y-2 text-white/70 text-base list-disc list-inside">
+                  <li>
+                    <strong>AI 時代新思維：</strong>
+                    ChatGPT 與 LLM 基礎。AI 能做與不能做的，常見的 AI 模型 ChatGPT / Claude / Gemini / Perplexity 比較、
+                    提示詞 PROMPT、學會撰寫精準指令。
+                  </li>
+                  <li>
+                    <strong>AI 效率大師：</strong>
+                    文件處理與會議記錄。NotebookLM / ChatPDF / Claude PDF 長文件摘要。AI 文件重點整理、AI 會議記錄整理、
+                    自動化生成大綱，3 分鐘內讀完 20 頁報告，並自動生成簡報初稿。
+                  </li>
+                  <li>
+                    <strong>AI 簡報大師：</strong>
+                    高品質會議簡報快速製作。NotebookLM / Google Slides / Gemini Canvas / Gamma。AI 投影片製作，
+                    快速完成投影片的製作，提升工作效率。
+                  </li>
+                  <li>
+                    <strong>AI 設計大師：</strong>
+                    無版權費要求的高品質設計。Canva AI / Veo3 / Nano Banana Pro。AI 繪圖與素材生成、解決版權素材搜尋問題，
+                    製作專業的海報、文案圖片、短影片。
+                  </li>
                 </ul>
-              </div>
-
-              <div className="pt-4 border-t border-cyan-300/20">
-                <h4 className="text-white font-semibold mb-2 text-xl">課程目標</h4>
-                <p className="text-white/70 text-base" itemProp="learningResourceType">建立 AI 職場生存力，用 AI 解決日常工作、提升效率、強化產出。</p>
               </div>
             </div>
 
@@ -135,7 +137,7 @@ export const CourseContent = () => {
               href={URLS.ACCUPASS}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-animated block w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-4 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition font-medium text-center shadow-lg mt-6 text-lg min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+              className="btn-animated block w-full bg-gradient-to-r from-[#FE5D13] to-[#FE5D13] text-white px-6 py-4 rounded-lg hover:from-[#ff7a33] hover:to-[#ff7a33] transition font-medium text-center shadow-lg mt-6 text-lg min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#FE5D13] focus:ring-offset-2 focus:ring-offset-slate-900"
               aria-label="立即報名入門班課程"
               itemProp="url"
             >
@@ -151,32 +153,20 @@ export const CourseContent = () => {
             itemScope 
             itemType="https://schema.org/Course"
           >
-            <div className="absolute -top-4 right-6">
-              <span className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-1 rounded-full text-base font-medium shadow-lg animate-pulse-slow" aria-label="熱門推薦標籤">
-                熱門推薦
-              </span>
-            </div>
-            
             <div className="text-left space-y-6 flex-grow">
               <div>
-                <span className="inline-block bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-base font-medium mb-3 icon-bounce" aria-label="進階班標籤">
-                  進階班
-                </span>
-                <h3 id="advanced-course-title" className="text-3xl font-bold text-white mb-2" itemProp="name">從 SEO、AIO 到 GEO</h3>
-                <p className="text-white/80 text-lg" itemProp="description">AI 搜尋時代的網站經營轉型實戰</p>
+                <h3 id="advanced-course-title" className="text-3xl font-bold text-white mb-2" itemProp="name">進階班</h3>
                 <meta itemProp="courseCode" content="ADVANCED-2026" />
                 <meta itemProp="educationalLevel" content="進階" />
               </div>
 
-              <div className="flex items-baseline gap-3" aria-label="課程價格" itemScope itemType="https://schema.org/Offer">
-                <span className="text-4xl font-bold text-white" itemProp="price">NT$ 15,000</span>
+              <div className="flex items-baseline gap-3 mt-2" aria-label="課程價格" itemScope itemType="https://schema.org/Offer">
+                <span className="text-4xl font-bold text-white" itemProp="price">NT$ 10,000</span>
                 <meta itemProp="priceCurrency" content="TWD" />
               </div>
 
-              {/* 分隔線 */}
-              <div className="border-t border-cyan-300/30 my-4"></div>
-
-              <div className="space-y-3 text-white/80 text-lg" role="list">
+              <div className="space-y-3 text-white/80 text-lg mt-4" role="list">
+              
                 <div className="flex items-center gap-2" role="listitem">
                   <span className="w-6 text-center icon-bounce" aria-hidden="true">
                     <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -184,7 +174,7 @@ export const CourseContent = () => {
                       <path d="M8 3v4M16 3v4M4 9h16" />
                     </svg>
                   </span>
-                  <time itemProp="startDate" dateTime="2026-01-05T19:00:00+08:00">每週一 1/5、1/12、1/19、1/26</time>
+                  <time itemProp="startDate" dateTime="2026-05-20T19:00:00+08:00">每週三 5/20、5/27、6/3、6/10</time>
                 </div>
                 <div className="flex items-center gap-2" role="listitem">
                   <span className="w-6 text-center icon-bounce" aria-hidden="true">
@@ -205,39 +195,37 @@ export const CourseContent = () => {
                   </span>
                   <span itemProp="timeRequired">4堂（共8小時）</span>
                 </div>
-                <div className="flex items-center gap-2" role="listitem">
-                  <span className="w-6 text-center icon-bounce" aria-hidden="true">
-                    <svg className="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M16 19a4 4 0 0 0-8 0" />
-                      <circle cx="12" cy="11" r="3" />
-                      <path d="M20 19a4 4 0 0 0-3-3.87" />
-                      <path d="M17 11a3 3 0 0 0-2.4-2.92" />
-                      <path d="M4 19a4 4 0 0 1 3-3.87" />
-                      <path d="M7 11a3 3 0 0 1 2.4-2.92" />
-                    </svg>
-                  </span>
-                  <span>已有基礎概念</span>
-                </div>
               </div>
 
-              <div className="pt-4 border-t border-cyan-300/20">
-                <h4 className="text-white font-semibold mb-3 text-xl">適合對象</h4>
-                <p className="text-white/70 text-base" itemProp="audience">內容編輯、行銷、公關、PM、自媒體經營者、SEO 專員、企業主管</p>
-              </div>
+              <div className="pt-4 border-t border-cyan-300/20 mt-4 text-left">
+                <h4 className="text-white font-semibold mb-2 text-xl">適合對象</h4>
+                <p className="text-white/70 text-base">
+                  上班族、行政庶務、人資財務、行銷企劃、公關 PM、媒體編輯、企業主管、自媒體經營者、專案決策者
+                </p>
 
-              <div className="pt-4 border-t border-cyan-300/20">
-                <h4 className="text-white font-semibold mb-3 text-xl">課程內容</h4>
-                <ul className="space-y-2 text-white/70 text-base" role="list" itemProp="teaches">
-                  <li>• 搜尋新生態戰略轉移：零點擊搜尋、SEO/AIO/GEO 差異與佈局</li>
-                  <li>• 內容重塑與 E-E-A-T：打造 AI 友善內容、Q&A 模組</li>
-                  <li>• 技術佈局與轉換策略：Schema、GEO 技術、Landing Page 與 CRO</li>
-                  <li>• 私域與長期內容護城河：名單吸引、Email 自動化、多平台策略</li>
+                <h4 className="text-white font-semibold mb-2 text-xl mt-4">課程內容</h4>
+                <ul className="space-y-2 text-white/70 text-base list-disc list-inside">
+                  <li>
+                    <strong>AI 數據大師：</strong>
+                    AI 與試算表的協作。用 AI 清理試算表資料、用 AI 下 Excel 指令、各種用於 Excel 的 AI 工具，
+                    以及 Google Spreadsheet Gemini 工具，並說明 AI 數據分析的雷區。
+                  </li>
+                  <li>
+                    <strong>AI 外掛大師：</strong>
+                    瀏覽器 AI 自動化實戰。Microsoft Copilot / Harpa AI / Merlin。AI 網頁與 YouTube 即時摘要、
+                    網頁數據一鍵提取與自動化監控、智慧信件回覆與語氣校正，讓 AI 無縫嵌入日常辦公網頁。
+                  </li>
+                  <li>
+                    <strong>AI 搜尋大師：</strong>
+                    高效情報獲取與事實查核。Perplexity / SearchGPT。AI 聯網搜尋與深度研究報告，
+                    進行競品分析與產業趨勢調查，並學會如何識別假新聞與驗證 AI 回答的準確性。
+                  </li>
+                  <li>
+                    <strong>AI 客製大師：</strong>
+                    打造個人專屬的 AI 助理。ChatGPT GPTs。無程式碼 AI Agent 開發，不需寫程式也能打造專屬機器人，
+                    餵入個人文件，讓 AI 成為最懂你業務流程的數位員工。
+                  </li>
                 </ul>
-              </div>
-
-              <div className="pt-4 border-t border-cyan-300/20">
-                <h4 className="text-white font-semibold mb-2 text-xl">課程目標</h4>
-                <p className="text-white/70 text-base" itemProp="learningResourceType">掌握 AI 搜尋時代的內容策略，建立可被 AI 主動引用的高權威內容與網站。</p>
               </div>
             </div>
 
@@ -245,7 +233,7 @@ export const CourseContent = () => {
               href={URLS.ACCUPASS}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-animated block w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-4 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition font-medium text-center shadow-lg mt-6 text-lg min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+              className="btn-animated block w-full bg-gradient-to-r from-[#FE5D13] to-[#FE5D13] text-white px-6 py-4 rounded-lg hover:from-[#ff7a33] hover:to-[#ff7a33] transition font-medium text-center shadow-lg mt-6 text-lg min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#FE5D13] focus:ring-offset-2 focus:ring-offset-slate-900"
               aria-label="立即報名進階班課程"
               itemProp="url"
             >
@@ -254,15 +242,24 @@ export const CourseContent = () => {
           </article>
         </div>
 
-        {/* 課程時間表 */}
-        <div 
+        <p
+          className="text-base sm:text-lg font-semibold mt-8 max-w-6xl mx-auto text-center"
+          style={{ color: 'rgb(103 232 249)' }}
+        >
+          本期新生若欲報名入門班+進階班的課程，課程費用可折抵NT$2000。
+          <br />
+          【AI 賦能學院】舊生報名本期課程可折抵NT$2000。
+        </p>
+
+        <section
           id="schedule"
           ref={scheduleRef}
-          className={`mt-16 ${ANIMATION_CLASSES.fadeInUp(scheduleVisible, 'delay-400')}`}
+          className={`mt-16 scroll-mt-24 ${ANIMATION_CLASSES.fadeInUp(scheduleVisible, 'delay-400')}`}
         >
+
           <div>
             <h3 className="text-4xl font-bold text-white mb-4">課程時間表</h3>
-            <p className="text-white/80 text-xl">2026 年 1 月課程表</p>
+            
             <p className="text-white/70 text-base">每堂課上課時間 19:00 - 21:15｜實體課程</p>
           </div>
 
@@ -271,15 +268,23 @@ export const CourseContent = () => {
               <table className="w-full text-left" role="table" aria-label="2026年1月課程時間表">
                 <thead>
                   <tr className="border-b border-cyan-300/20">
-                    <th className="pb-4 text-white font-semibold text-xl" scope="col">週次</th>
-                    <th className="pb-4 text-white font-semibold text-xl" scope="col">入門班</th>
-                    <th className="pb-4 text-white font-semibold text-xl" scope="col">進階班</th>
+                    <th className="pb-4 text-white font-semibold text-xl" scope="col">
+                      週次
+                    </th>
+                    <th className="pb-4 text-white font-semibold text-xl" scope="col">
+                      入門班
+                    </th>
+                    <th className="pb-4 text-white font-semibold text-xl" scope="col">
+                      進階班
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   {SCHEDULE.map((item, index) => (
                     <tr key={index} className="border-b border-cyan-300/10">
-                      <th className="py-4 text-white font-medium text-lg" scope="row">{item.week}</th>
+                      <th className="py-4 text-white font-medium text-lg" scope="row">
+                        {item.week}
+                      </th>
                       <td className="py-4">
                         <div className="text-cyan-300 font-medium text-lg">{item.basic.date}</div>
                         <div className="text-white/70 text-base">{item.basic.title}</div>
@@ -294,11 +299,11 @@ export const CourseContent = () => {
               </table>
             </div>
           </div>
-        </div>
 
-        <p className="text-white/50 text-base mt-8">
-          講師視實際安排為主，主辦單位保留課程內容調整及授課講師異動之權利。
-        </p>
+          <p className="text-white/60 text-sm mt-6">
+            講師視實際安排為主，主辦單位保留課程內容調整及授課講師異動之權利。
+          </p>
+        </section>
       </div>
     </section>
   );

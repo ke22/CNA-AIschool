@@ -3,21 +3,21 @@ import { ANIMATION_CLASSES } from '../utils/classNames';
 
 const FEATURES = [
   {
-    title: '國際級產學專家親授',
-    description: '台大資管博士、NVIDIA DLI 認證講師、國立大學資管教授，資深專家帶你掌握 AI 核心技能。'
+    title: '權威級產學專家親授',
+    description: '國立中興大學企管博士、國立大學資管教授親授，結合學術深度與實務脈絡，帶領您從技術邏輯到社群操作，全方位掌握 AI 核心應用。',
   },
   {
-    title: '超高度實務應用',
-    description: '每堂課都有「帶得走的成果」：文案、簡報、影片、SEO 架構、GEO 內容策略。'
+    title: '高效實戰成果產出',
+    description: '強調「即學即用」的產出導向，每堂課皆能完成帶得走的成果：自動化會議記錄、長文摘要報告、高品質專業簡報以及無版權疑慮的視覺影像。',
   },
   {
-    title: '零技術門檻',
-    description: '不需要寫程式、不需要設計背景。只需要一台電腦，你就能立即進入下一個職涯階段。'
+    title: '直覺化零門檻學習',
+    description: '無須程式基礎或設計背景，透過教授獨創的結構化指令心法，僅憑電腦即可跨越技術門檻，讓科技工具成為您直覺操作的數位大腦。',
   },
   {
-    title: '適合所有專業人士',
-    description: '上班族、行銷、公關、企劃、行政、PM、創作者、研究人員、管理者，都適用。'
-  }
+    title: '培養跨產業全方位賦能',
+    description: '廣泛適用於商務決策、行銷公關、行政庶務、教育研究及各級管理者，協助專業人士在 AI 浪潮中實現數位轉型，精準定義下一個職涯高峰。',
+  },
 ] as const;
 
 export const WhySection = () => {
@@ -34,7 +34,7 @@ export const WhySection = () => {
   const delays = ['delay-200', 'delay-300', 'delay-400', 'delay-500'];
 
   return (
-    <section id="why" className="w-full py-8 sm:py-12 px-4 sm:px-0" aria-labelledby="why-title">
+    <section id="why" className="w-full py-8 sm:py-12 px-4 sm:px-0 scroll-mt-24" aria-labelledby="why-title">
       <div className="text-center space-y-6 sm:space-y-8 max-w-4xl mx-auto">
         <h2 
           id="why-title" 
@@ -45,9 +45,9 @@ export const WhySection = () => {
         </h2>
         <p 
           ref={descRef}
-          className={`text-white/90 text-base sm:text-lg md:text-xl leading-relaxed px-4 text-balance ${ANIMATION_CLASSES.fadeInUp(descVisible, 'delay-100')}`}
+          className={`text-white/90 text-base sm:text-lg md:text-xl leading-relaxed px-4  ${ANIMATION_CLASSES.fadeInUp(descVisible, 'delay-100')}`}
         >
-          AI 正在重寫所有人的工作方式。SEO 不再只是關鍵字；辦公室技能也不再是人力堆疊。生成式 AI 讓知識、內容、效率全面翻新——你準備好了嗎？
+          AI 正在全面重寫職場的生存法則。工作效率不再取決於體力堆疊，資訊價值也不再僅限於搜尋與整理。從精準指令到智慧自動化，從數據分析到事實查核，生成式 AI 正在引領一場知識與決策的全面革命——您準備好掌握這股賦能浪潮了嗎？
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12">

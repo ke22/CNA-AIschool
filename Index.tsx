@@ -83,8 +83,8 @@ const Index = () => {
                     聯絡資訊
                   </h3>
                   <div className="space-y-3 text-white/80 text-lg">
-                    <p>洽詢電話：02-2505-1180 分機789(吳先生) 、分機785(黃小姐)</p>
-                    <p>電子信箱：cnaforumonly@gmail.com</p>
+                    <p>洽詢電話：02-2505-1180 分機795(王先生)、分機792(張小姐)</p>
+                    <p>電子信箱：cnamarketvideo3@gws.cna.com.tw</p>
                     <p>服務時間：週一至週五(不含國定假日) 09:30 ~ 18:00</p>
                   </div>
                 </div>

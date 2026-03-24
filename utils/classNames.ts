@@ -9,7 +9,7 @@ export const COMMON_CLASSES = {
   navLink: 'text-white hover:text-cyan-300 transition text-base min-h-[44px] flex items-center focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded px-2 link-underline',
   
   // CTA Button
-  ctaButton: 'btn-animated bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition font-medium shadow-lg text-base min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900',
+  ctaButton: 'btn-animated bg-gradient-to-r from-[#FE5D13] to-[#FE5D13] text-white px-6 py-2 rounded-lg hover:from-[#ff7a33] hover:to-[#ff7a33] transition font-medium shadow-lg text-base min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#FE5D13] focus:ring-offset-2 focus:ring-offset-slate-900',
   
   // Mobile menu item
   mobileMenuItem: 'text-white hover:text-cyan-300 transition text-base py-3 min-h-[44px] flex items-center focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded px-2 link-underline',
