@@ -50,7 +50,7 @@ export const HeroSection = () => {
           ref={subtitleRef}
           className={`text-4xl sm:text-5xl md:text-6xl font-extrabold text-white ${ANIMATION_CLASSES.fadeInUp(subtitleVisible, 'delay-200')}`}
         >
-          春季班開課
+          進階班開課
         </p>
 
         {/* Description */}
